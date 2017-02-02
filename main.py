@@ -68,6 +68,7 @@ class PostPage(BlogHandler):
 			return
 
 		self.render("permalink.html", post = post)
+		
 class NewPost(BlogHandler):
     def get(self):
         self.render("newpost.html")
