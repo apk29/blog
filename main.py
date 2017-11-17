@@ -42,6 +42,7 @@ class MainPage(BlogHandler):
 def blog_key(name = 'default'):
 	return ndb.Key('blogs', name)
 
+#This creates the entities the database within the datastore
 class Post(ndb.Model):
 	subject = ndb.StringProperty(required = True)
 	content = ndb.TextProperty(required = True)
